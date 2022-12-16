@@ -1,5 +1,0 @@
-Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll filter=lfs diff=lfs merge=lfs -text
-Assets/TextMesh[[:space:]]Pro/Resources/Fonts[[:space:]]&[[:space:]]Materials/LiberationSansSdf.asset
-git[[:space:]]add[[:space:]]Assets/TextMesh filter=lfs diff=lfs merge=lfs -text
-Pro/Resources/Fonts filter=lfs diff=lfs merge=lfs -text
-Assets/TextMesh[[:space:]]Pro/Resources/Fonts[[:space:]]&[[:space:]]Materials/LiberationSans[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
