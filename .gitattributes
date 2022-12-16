@@ -1,0 +1,8 @@
+Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.cinemachine@2.6.17/Extras~/CinemachineExamples.unitypackage filter=lfs diff=lfs merge=lfs -text
+Library/Artifacts/69/69b6b071072c4c6686a8a057b34cb491 filter=lfs diff=lfs merge=lfs -text
+Library/Artifacts/d8/d84c53433f52bec1dbc113de7ade81c2 filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.collab-proxy@1.15.13/Documentation~/images/plasticHub.gif filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.cinemachine@2.6.17/Samples~/Cinemachine[[:space:]]Example[[:space:]]Scenes/Shared/Models/UnityCharacter/Animations/Idle.fbx filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.collab-proxy@1.15.13/Lib/Editor/PlasticSCM/unityplastic.dll filter=lfs diff=lfs merge=lfs -text
+Library/SourceAssetDB filter=lfs diff=lfs merge=lfs -text
