@@ -1,8 +1,10 @@
 using Controllers.Player;
 using Data.UnityObjects;
 using Data.ValueObjects;
+using Keys;
 using Signals;
 using Sirenix.OdinInspector;
+using System;
 using UnityEngine;
 
 namespace Managers
@@ -75,49 +77,46 @@ namespace Managers
             CoreGameSignals.Instance.onReset -= OnReset;
         }
 
-        private void OnPlay()
-        {
-            movementController.IsReadyToPlay(true);
-        }
-
         private void OnDisable()
         {
             UnSubscribeEvents();
         }
 
-        private void OnInputTaken()
+        private void OnPlay()
         {
-            movementController.isReadyToMove(true);
+            movementController.IsReadyToPlay(true);
         }
 
-        private void OnInputDragged(HorizontalInputParams inputParams)
+        private void OnInputTaken()
+        {
+            movementController.IsReadyToMove(true);
+        }
+        private void OnInputDragged(HorizontalnputParams inputParams)
         {
             movementController.UpdateInputParams(inputParams);
         }
 
         private void OnInputReleased()
         {
-            movementController.isReadyToMove(false);
+            movementController.IsReadyToMove(false);
         }
 
         private void OnLevelSuccessful()
         {
-            movementController.isReadyToPlay(false);
+            movementController.IsReadyToPlay(false);
         }
-
         private void OnLevelFailed()
         {
-            movementController.isReadyToPlay(false);
+            movementController.IsReadyToPlay(false);
         }
 
         private void OnStageAreaEntered()
         {
-            movementController.isReadyToMove(false);
+            movementController.IsReadyToPlay(false);
         }
-
         private void OnStageAreaSuccessful()
         {
-            movementController.isReadyToMove(true);
+            movementController.IsReadyToPlay(true);
         }
 
         private void OnReset()

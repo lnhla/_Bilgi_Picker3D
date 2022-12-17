@@ -1,4 +1,5 @@
 using Managers;
+using Signals;
 using UnityEngine;
 
 namespace Controllers.Player
@@ -22,7 +23,7 @@ namespace Controllers.Player
             if (other.CompareTag("StageArea"))
             {
                 CoreGameSignals.Instance.onStageAreaEntered?.Invoke();
-                InputSignals.Instance.
+                InputSignals.Instance.onDisableInput?.Invoke();
             }
         }
 
